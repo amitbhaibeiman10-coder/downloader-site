@@ -1,137 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>  <meta name="monetag" content="072b4aaad22e42364a1257c04857ed1d">
-<meta charset="UTF-8">
-<title>Downloader Video & Audio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <title>Downloader Video & Audio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{box-sizing:border-box}
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#0b0b0b;
-color:#fff;
-display:flex;
-justify-content:center;
-padding:20px;
-}
-.container{
-width:100%;
-max-width:420px;
-}
-h1{
-text-align:center;
-color:#18ffd1;
-margin-bottom:20px;
-}
-input,select,button{
-width:100%;
-padding:14px;
-margin-top:12px;
-border-radius:8px;
-border:none;
-font-size:15px;
-}
-input,select{
-background:#1c1c1c;
-color:#fff;
-}
-button{
-background:#18ffd1;
-color:#000;
-font-weight:bold;
-cursor:pointer;
-}
-.section{
-background:#141414;
-padding:15px;
-border-radius:10px;
-margin-top:18px;
-}
-.section h3{
-margin-top:0;
-border-bottom:1px solid #333;
-padding-bottom:6px;
-}
-ul{
-padding-left:18px;
-margin:8px 0;
-}
-.footer{
-text-align:center;
-font-size:12px;
-opacity:.6;
-margin-top:25px;
-}
-.ad{
-margin:20px 0;
-text-align:center;
-}
-</style>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: #111;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #1abc9c;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #16a085;
+    }
+
+    .info {
+      margin-top: 20px;
+      font-size: 13px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .info ul {
+      padding-left: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
-<div class="container">
 
-<h1>Downloader Video & Audio</h1>
+  <div class="container">
+    <h1>Downloader Video & Audio</h1>
 
-<input type="text" placeholder="Paste video or audio URL here">
+    <input type="text" placeholder="Paste video or audio URL here">
 
-<select>
-<option>Select format</option>
-<option>Video (MP4)</option>
-<option>Audio (MP3)</option>
-</select>
+    <select>
+      <option>Select format</option>
+      <option>Video (MP4)</option>
+      <option>Audio (MP3)</option>
+    </select>
 
-<select>
-<option>Select quality</option>
-<option>Best quality</option>
-<option>720p</option>
-<option>480p</option>
-<option>128kbps audio</option>
-</select>
+    <select>
+      <option>Select quality</option>
+      <option>Best quality</option>
+      <option>720p</option>
+      <option>480p</option>
+      <option>128kbps audio</option>
+    </select>
 
-<button onclick="alert('Backend not connected yet')">
-Download
-</button>
+    <button onclick="startDownload()">Download</button>
 
-<!-- AD PLACE -->
-<div class="ad">
-<!-- PASTE MONETAG CODE HERE LATER -->
-</div>
+    <div class="info">
+      <strong>How to use:</strong>
+      <ul>
+        <li>Copy video or audio link</li>
+        <li>Paste the link above</li>
+        <li>Select format & quality</li>
+        <li>Click Download (Chrome supported)</li>
+      </ul>
 
-<div class="section">
-<h3>How to Use</h3>
-<ul>
-<li>Copy video or audio link</li>
-<li>Paste the link above</li>
-<li>Select format & quality</li>
-<li>Click Download (Chrome starts)</li>
-</ul>
-</div>
+      <strong>Supported platforms:</strong>
+      <ul>
+        <li>YouTube</li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter (X)</li>
+      </ul>
 
-<div class="section">
-<h3>Supported Platforms</h3>
-<p>YouTube, Instagram, Facebook, Twitter (X), and more.</p>
-</div>
+      <strong>Features:</strong>
+      <ul>
+        <li>Video & Audio downloads</li>
+        <li>No login required</li>
+        <li>Works on mobile & desktop</li>
+      </ul>
+    </div>
 
-<div class="section">
-<h3>Website Features</h3>
-<ul>
-<li>Video & Audio downloads</li>
-<li>Multiple quality options</li>
-<li>Shows file size (MB)</li>
-<li>No login required</li>
-<li>Works on mobile & desktop</li>
-</ul>
-</div>
+    <div class="footer">
+      © 2025 Downloader Video & Audio
+    </div>
+  </div>
 
-<div class="footer">
-© 2025 Downloader Video & Audio
-</div>
+  <script>
+    function startDownload() {
+      // YOUR SHRINKME LINK
+      window.location.href = "https://shrinkme.click/O1RR";
+    }
+  </script>
 
-</div>
 </body>
 </html>
+
